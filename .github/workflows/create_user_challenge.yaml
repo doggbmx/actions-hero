@@ -1,0 +1,11 @@
+name: Create User Challenge
+
+on:
+  fork:
+
+jobs:
+  echo-message:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call API
+        run: echo {{ github.event }}
