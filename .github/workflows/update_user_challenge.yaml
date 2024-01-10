@@ -5,8 +5,8 @@ on:
     types: [opened, reopened, synchronize]
 
 jobs:
-  echo-message:
+  update_uc:
     runs-on: ubuntu-latest
     steps:
-      - name: Update User Challenge
+      - name: Update User Challenge Job
         run: echo "${{ toJSON(github.event) }}"
