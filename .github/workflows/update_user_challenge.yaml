@@ -1,0 +1,12 @@
+name: Update User Challenge
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+
+jobs:
+  echo-message:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Update User Challenge
+        run: echo "${{ toJSON(github.event) }}"
